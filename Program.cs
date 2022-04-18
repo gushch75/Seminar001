@@ -1,28 +1,52 @@
-﻿ int Max (int arg1,int arg2,int arg3)
-{
-int result = arg1;
-if (result < arg2) result = arg2;
-if (result < arg3) result = arg3;
-return result;
-}
+﻿// Задача №2
 
-int a1 = 13;
-int a2 = 14;
-int a3 = 15;
+Console.WriteLine("Введите два числа");
+int numberA = Convert.ToInt32(Console.ReadLine());
+int numberB = Convert.ToInt32(Console.ReadLine());
+ if (numberA > numberB)
+   {
+     Console.WriteLine ($"Большим числом является {numberA}"); 
+    }
+    else 
+   Console.WriteLine ($"Большим числом является {numberB}");
 
-int b1 = 21;
-int b2 = 22;
-int b3 = 23;
+// Задача №4
+Console.WriteLine("Введите три числа");
+int numberA = Convert.ToInt32(Console.ReadLine());
+int numberB = Convert.ToInt32(Console.ReadLine());
+int numberC = Convert.ToInt32(Console.ReadLine());
+int max = 0;
+ if (numberA > numberB)
+   {
+      max = numberA;
+    }
+ else 
+  max = numberB;
+     if  (max > numberC)
+     {
+       Console.WriteLine ($"Большим числом является {max}");
+      }
+   else 
+   Console.WriteLine($"Большим числом является {numberC}");
 
-int c1 = 48;
-int c2 = 49;
-int c3 = 50;
+// Задача №6
+   int numberX = Convert.ToInt32(Console.ReadLine());
+   if ((numberX % 2)==0)
+    Console.WriteLine ($"Число {numberX}четное");
+    else 
+    Console.WriteLine ($"Число {numberX} нечетное");
 
- int max1 = Max (a1,a2,a3);
- int max2 = Max (b1,b2,b3);
- int max3 = Max  (c1,c2,c3);
- int  max = Max (max1,max2,max3);
- Console.WriteLine (max1);
- Console.WriteLine (max2);
- Console.WriteLine (max3);
- Console.WriteLine ($"Наибольшее число {max}");
+// Задача №8
+Console.WriteLine("Введите число");
+int numberA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Вы ввели  число {numberA}");
+int count =0;
+   if ((numberA % 2)==0)
+   {
+      // count = count;
+    }
+   numberA=numberA-1;
+   while (count < numberA)
+   {count= count+2;
+      Console.WriteLine($"Следующее четное  число {count}");
+   }
